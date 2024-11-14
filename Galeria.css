@@ -1,0 +1,153 @@
+/* Estilo del fondo del cuerpo de la página */
+body {
+  background-color: #e8e8e8; /* Color de fondo gris claro */
+  margin: 0; /* Eliminar márgenes predeterminados */
+}
+
+/* Estilo para los enlaces */
+a {
+  text-decoration: none; /* Eliminar subrayado de los enlaces */
+  color: #ffffff; /* Color blanco para el texto del enlace */
+  font-family: 'Courier New', Courier, monospace; /* Tipo de fuente monoespaciada */
+}
+
+/* Estilo del encabezado */
+header {
+  display: flex; /* Utiliza un diseño flexible para el encabezado */
+  min-height: auto; /* La altura mínima es automática */
+  background-color: #242c2f; /* Color de fondo oscuro */
+  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+  align-items: center; /* Alinea los elementos en el centro verticalmente */
+  padding: 10px; /* Espaciado interno de 10px */
+  margin: auto; /* Centra el encabezado en el contenedor */
+  position: sticky; /* El encabezado se queda fijo al hacer scroll */
+}
+
+/* Estilo de la clase logo dentro del encabezado */
+.logo {
+  display: flex; /* Utiliza un diseño flexible */
+  align-items: center; /* Alinea los elementos en el centro verticalmente */
+}
+
+/* Estilo de la imagen dentro del logo */
+.logo img {
+  height: 70px; /* Altura de la imagen del logo */
+  margin-right: 10px; /* Espaciado a la derecha */
+}
+
+/* Estilo de los enlaces dentro de la barra de navegación */
+nav a {
+  font-weight: 600; /* Peso de la fuente en negrita */
+  padding-right: 15px; /* Espaciado a la derecha */
+  font-family: 'Courier New', Courier, monospace; /* Tipo de fuente monoespaciada */
+}
+
+/* Estilo cuando se pasa el mouse sobre los enlaces */
+nav a:hover {
+  color: #789295; /* Cambia el color a gris claro cuando se pasa el mouse */
+}
+
+/* Estilo para pantallas con un ancho máximo de 700px */
+@media (max-width: 700px) {
+  header {
+      flex-direction: column; /* El encabezado se organiza en columna */
+  }
+
+  nav {
+      padding: 10px 0px; /* Espaciado superior e inferior de la barra de navegación */
+  }
+}
+
+/* Estilo del cuerpo de la página (ya con fondo negro) */
+body {
+  font-family: 'Arial', sans-serif; /* Tipo de fuente para el contenido */
+  margin: 10px; /* Margen alrededor del cuerpo */
+  padding: 10px; /* Espaciado interno del cuerpo */
+  background-color: #000000; /* Fondo de la página en negro */
+}
+
+/* Contenedor principal de la página */
+.contenedor {
+  padding: 2rem; /* Espaciado interno de 2rem */
+  display: flex; /* Utiliza un diseño flexible */
+  text-align: center; /* Centra el texto */
+  color: #789295; /* Color de texto gris claro */
+}
+
+/* Estilo del contenedor del slider (deslizador) */
+.slider-wrapper {
+  position: relative; /* Posiciona el contenedor de forma relativa */
+  max-width: 48rem; /* Máximo ancho de 48rem */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilo del slider (deslizador) */
+.slider {
+  display: flex; /* Utiliza un diseño flexible */
+  aspect-ratio: 16 / 9; /* Relación de aspecto de 16:9 */
+  overflow-x: auto; /* Permite el deslizamiento horizontal */
+  scroll-snap-type: x mandatory; /* Fuerza el deslizamiento hacia los elementos del slider */
+  scroll-behavior: smooth; /* Desliza suavemente entre las imágenes */
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); /* Sombra alrededor del slider */
+  border-radius: 5%; /* Bordes redondeados */
+}
+
+/* Estilo de las imágenes dentro del slider */
+.slider img {
+  flex: 1 0 100%; /* Las imágenes ocupan el 100% del ancho */
+  scroll-snap-align: start; /* Alinea la imagen al inicio del contenedor cuando se hace scroll */
+  object-fit: cover; /* Las imágenes cubren el área sin distorsión */
+  max-width: 100%; /* El ancho máximo es el 100% */
+}
+
+/* Estilo para los botones de navegación del slider */
+.slider-nav {
+  display: flex; /* Utiliza un diseño flexible */
+  column-gap: 1rem; /* Espacio entre los botones */
+  position: absolute; /* Posiciona los botones de forma absoluta */
+  bottom: 1.25rem; /* Los coloca a 1.25rem de la parte inferior */
+  left: 50%; /* Los centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta la posición para centrar completamente */
+  z-index: 1; /* Asegura que los botones estén por encima del slider */
+}
+
+/* Estilo de cada botón de navegación en el slider */
+.slider-nav a {
+  width: 0.5rem; /* Ancho de los botones */
+  height: 0.5rem; /* Alto de los botones */
+  border-radius: 50%; /* Forma circular */
+  background-color: #fff; /* Fondo blanco */
+  opacity: 0.75; /* Opacidad inicial */
+  transition: opacity ease 250ms; /* Transición suave en la opacidad */
+}
+
+/* Estilo cuando se pasa el mouse sobre los botones de navegación */
+.slider-nav a:hover {
+  opacity: 1; /* Hace que la opacidad sea completamente visible */
+}
+
+/* Estilo de los textos dentro de los contenedores */
+.txt {
+  margin-left: 18px; /* Espaciado a la izquierda */
+  font-family: 'Courier New', Courier, monospace; /* Tipo de fuente monoespaciada */
+}
+
+/* Estilo del pie de página */
+footer {
+  text-align: center; /* Centra el texto */
+  padding: 10px; /* Espaciado interno */
+  background-color: #000000; /* Fondo negro */
+  color: #fff; /* Color blanco para el texto */
+}
+
+/* Estilo para las secciones */
+section {
+  padding: 20px; /* Espaciado interno de 20px */
+  margin: 20px; /* Margen alrededor de la sección */
+  background-color: #242c2f; /* Fondo oscuro */
+  display: flex; /* Utiliza un diseño flexible */
+  align-items: center; /* Alinea los elementos verticalmente */
+  color: #789295; /* Color del texto gris claro */
+  margin-left: 18px; /* Margen a la izquierda */
+  border-radius: 10%; /* Bordes redondeados */
+}

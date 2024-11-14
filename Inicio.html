@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta etiquetas que definen la codificación de caracteres y la compatibilidad con navegadores -->
+        <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Asegura que se utilice el motor de renderizado más reciente de Internet Explorer -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive en dispositivos móviles -->
+        
+        <!-- Enlace al archivo de hojas de estilo (CSS) para el diseño -->
+        <link rel="stylesheet" href="estiloInicio.css">
+        <!-- Título de la página que aparecerá en la pestaña del navegador -->
+        <title>Encabezado responsive</title>
+    </head>
+    <body>
+        <!-- Sección de encabezado con el logo y la navegación -->
+        <header>
+            <!-- Enlace al logo de la empresa -->
+            <a href="" class="logo">
+                <img src="Logo1.png" alt="logo de la compañía"> <!-- Imagen del logo -->
+                <h2 class="nombre-empresa"> Forward Unto Dawn </h2> <!-- Nombre de la empresa -->
+            </a>
+            <!-- Barra de navegación con enlaces a diferentes páginas -->
+            <nav>
+                <a href="Menu.html" class="nav-link">Ménu</a>
+                <a href="Conoce.html" class="nav-link">Conoce al personal</a>
+                <a href="Promociones.html" class="nav-link">Promociones</a>
+                <a href="Galeria.html" class="nav-link">Galeria</a>
+            </nav>
+        </header>
+
+        <!-- Contenedor principal que incluye el contenido del sitio -->
+        <div class="contenedor">
+
+            <div class="txt">
+
+                <!-- Sección de "Conocenos" -->
+                <section class="espectaculo">
+                    <div>
+                        <h2>Conócenos</h2>
+                        <p>Forward Unto Dawn es una franquicia de restaurantes inspirada en la Mítica Fragata ligera Clase-Charon dirigida por la Comandante Miranda Keyes durante la batalla del Arca en 2552</p>
+                    </div>
+                </section>
+
+                <!-- Sección sobre los platillos del restaurante -->
+                <section class="espectaculo">
+                    <div>
+                        <h2>Comida de todos los rincones de la Galaxia</h2>
+                        <p>Forward Unto Dawn le ofrece platillos de diferentes colonias de la humanidad, desde las Hamburguesas de Moa en Reach hasta platillos terrestres más tradicionales.</p>
+                        <p>Para más información ve a la sección de menú o pulsa en la imagen</p>
+                    </div>
+                    <a href="">
+                        <img class="imagen" src="Comida.jpg" alt="Comida"> <!-- Imagen de comida -->
+                    </a>
+                </section>
+
+                <!-- Sección de "Warzone" -->
+                <section class="juegos">
+                    <div>
+                        <h2>Warzone</h2>
+                        <p>Disfruta de la Experiencia Warzone con tus amigos, tomando el papel de un Spartan Gen IV en distintos tipos de escenarios como eliminación de objetivos o captura de territorios</p>
+                    </div>
+                    <img class="imagen" src="R1.jpg" alt="Warzone"> <!-- Imagen relacionada con Warzone -->
+                </section>
+
+                <!-- Sección con el mapa de ubicación -->
+                <section>
+                    <div id="map">
+                        <h2>Nuestra ubicación</h2>
+                        <!-- Incrusta un mapa de Google Maps -->
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15046.219876921064!2d-99.05189752578733!3d19.474745146342265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb1ae7b9f1c7%3A0x501a154bf16c02f1!2sFacultad%20de%20Estudios%20Superiores%20Arag%C3%B3n%20UNAM!5e0!3m2!1ses!2smx!4v1700658153775!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Pie de página con derechos de autor y créditos -->
+        <footer>
+            <p>Derechos de autor Facultad de Estudios Superiores Aragón
+                Ortega Enriquez Alejandro
+                Programación Web 1500
+            </p>
+        </footer>
+
+    </body>
+
+</html>

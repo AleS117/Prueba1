@@ -1,0 +1,105 @@
+/* Establece el color de fondo del body y elimina los márgenes por defecto */
+body{
+  background-color: #e8e8e8;
+  margin: 0;
+}
+
+/* Estilo para los enlaces: eliminar subrayado y establecer el color blanco y fuente */
+a{
+  text-decoration: none; /* Eliminar subrayado de los enlaces */
+  color: rgb(255, 255, 255); /* Color blanco para el texto */
+  font-family:'Courier New', Courier, monospace; /* Fuente monospace */
+}
+
+/* Estilo para el encabezado (header): diseño flexible, fondo oscuro y elementos alineados */
+header{
+  display: flex; /* Usar diseño flexible para los elementos del header */
+  min-height: auto; /* No especifica altura mínima */
+  background-color: #242c2f; /* Color de fondo oscuro */
+  justify-content: space-between; /* Distribuir los elementos con espacio entre ellos */
+  align-items: center; /* Alinear verticalmente los elementos en el centro */
+  padding: 10px; /* Espaciado interno del header */
+  margin:auto; /* Centrar el header */
+  position: sticky; /* Fijar el encabezado en la parte superior de la página al hacer scroll */
+}
+
+/* Estilo para el logo (contenedor que incluye la imagen y el nombre de la empresa) */
+.logo{
+  display: flex; /* Usar diseño flexible */
+  align-items: center; /* Alinear verticalmente los elementos del logo */
+}
+
+/* Estilo para la imagen del logo */
+.logo img{
+  height: 70px; /* Establecer altura fija para la imagen del logo */
+  margin-right: 10px; /* Espaciado a la derecha de la imagen */
+}
+
+/* Estilo para los enlaces de la barra de navegación (nav) */
+nav a{
+  font-weight: 600; /* Establecer peso de la fuente */
+  padding-right: 15px; /* Espaciado a la derecha de los enlaces */
+  font-family:'Courier New', Courier, monospace; /* Fuente monospace */
+}
+
+/* Efecto hover para los enlaces de navegación: cambio de color al pasar el ratón */
+nav a:hover{
+  color: rgb(220, 55, 36); /* Cambio de color cuando el enlace es hoverizado */
+}
+
+/* Media query para pantallas pequeñas (ancho máximo de 700px) */
+@media (max-width:700px){
+  header{
+      flex-direction: column; /* Cambiar el diseño a columna cuando la pantalla es pequeña */
+  }
+
+  nav{
+      padding: 10px 0px; /* Espaciado adicional en la barra de navegación */
+  }
+}
+
+/* Estilo general para el body: fuente Arial y color de fondo oscuro */
+body {
+  font-family: 'Arial', sans-serif; /* Fuente Arial */
+  margin: 10px; /* Márgenes alrededor del body */
+  padding: 10px; /* Espaciado interno */
+  background-color: rgb(21, 19, 19); /* Fondo oscuro */
+}
+
+/* Estilo para las secciones (section): espaciado, color de fondo negro y bordes redondeados */
+section {
+  padding: 20px; /* Espaciado interno de cada sección */
+  margin: 20px; /* Márgenes exteriores */
+  background-color: #000000; /* Fondo negro para las secciones */
+  display:flex; /* Usar diseño flexible */
+  align-items: center; /* Alinear verticalmente los elementos dentro de la sección */
+  color: #789295; /* Color de texto gris */
+  margin-left: 18px; /* Espaciado adicional a la izquierda */
+  border-radius: 10%; /* Bordes redondeados */
+}
+
+/* Contenedor para las secciones, usando diseño flexible */
+.contenedor{
+  display: flex; /* Usar diseño flexible */
+}
+
+/* Estilo para las imágenes dentro de las secciones: tamaño y bordes redondeados */
+.imagen{
+  width: 300px; /* Establecer el ancho de las imágenes */
+  height: 300px; /* Establecer la altura de las imágenes */
+  border-radius: 5%; /* Bordes ligeramente redondeados */
+}
+
+/* Estilo para el texto dentro de la clase "txt" */
+.txt{
+  margin-left: 18px; /* Espaciado a la izquierda */
+  font-family:'Courier New', Courier, monospace; /* Fuente monospace */
+}
+
+/* Estilo para el pie de página (footer): centrado de texto y fondo negro */
+footer {
+  text-align: center; /* Centrar el texto en el pie de página */
+  padding: 10px; /* Espaciado interno del pie de página */
+  background-color: #000000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+}

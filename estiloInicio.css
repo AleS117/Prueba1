@@ -1,0 +1,112 @@
+/* Estilo general para el cuerpo de la página */
+body {
+  background-color: #e8e8e8; /* Color de fondo claro */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilo para los enlaces */
+a {
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: rgb(255, 255, 255); /* Establece el color de los enlaces en blanco */
+  font-family: 'Courier New', Courier, monospace; /* Fuentes monoespaciadas */
+}
+
+/* Estilos para el encabezado */
+header {
+  display: flex; /* Usa flexbox para distribuir los elementos en el header */
+  min-height: auto; /* No establece una altura mínima específica */
+  background-color: #242c2f; /* Fondo oscuro */
+  justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 10px; /* Espaciado interno */
+  margin: auto; /* Centra el header en la página */
+  position: sticky; /* Hace que el header se quede fijo al hacer scroll */
+}
+
+/* Estilo para el logo dentro del header */
+.logo {
+  display: flex; /* Usa flexbox para alinear los elementos dentro del logo */
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+  height: 70px; /* Define la altura de la imagen */
+  margin-right: 10px; /* Espaciado entre la imagen y el texto */
+}
+
+/* Estilo para los enlaces de navegación */
+nav a {
+  font-weight: 600; /* Peso de la fuente más pesado */
+  padding-right: 15px; /* Espaciado a la derecha de los enlaces */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+}
+
+/* Efecto de hover en los enlaces de navegación */
+nav a:hover {
+  color: #789295; /* Cambia el color cuando se pasa el ratón sobre los enlaces */
+}
+
+/* Media query para pantallas más pequeñas (max-width: 700px) */
+@media (max-width: 700px) {
+  header {
+      flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+  }
+
+  nav {
+      padding: 10px 0px; /* Espaciado vertical en la barra de navegación */
+  }
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+  font-family: 'Arial', sans-serif; /* Fuente general para el cuerpo */
+  margin: 10px; /* Margen en el cuerpo */
+  padding: 10px; /* Espaciado en el cuerpo */
+  background-color: rgb(21, 19, 19); /* Color de fondo oscuro */
+}
+
+/* Estilo para las secciones */
+section {
+  padding: 20px; /* Espaciado interno */
+  margin: 20px; /* Margen externo */
+  background-color: #242c2f; /* Fondo oscuro */
+  display: flex; /* Usa flexbox para alinear los elementos dentro de la sección */
+  align-items: center; /* Centra los elementos verticalmente */
+  color: #789295; /* Color del texto */
+  margin-left: 18px; /* Margen a la izquierda */
+  border-radius: 10%; /* Bordes redondeados */
+}
+
+/* Estilo para el contenedor general */
+.contenedor {
+  display: flex; /* Usa flexbox para organizar los elementos dentro del contenedor */
+}
+
+/* Estilo para las imágenes dentro del contenido */
+.imagen {
+  width: 500px; /* Ancho de las imágenes */
+  height: 300px; /* Altura de las imágenes */
+  border-radius: 5%; /* Bordes ligeramente redondeados */
+}
+
+/* Estilo para el texto dentro de las secciones */
+.txt {
+  margin-left: 18px; /* Espaciado a la izquierda */
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center; /* Centra el texto del pie de página */
+  padding: 10px; /* Espaciado interno */
+  background-color: #141414; /* Fondo oscuro para el pie de página */
+  color: #fff; /* Texto blanco */
+}
+
+/* Estilo para el mapa */
+#map {
+  width: 95%; /* Ancho del mapa al 95% del contenedor */
+  margin: auto; /* Centra el mapa horizontalmente */
+  display: block; /* Asegura que el mapa se muestre como un bloque */
+}
